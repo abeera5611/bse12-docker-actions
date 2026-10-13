@@ -27,7 +27,7 @@ jobs:
       - name: Build image
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-        run: docker build -t "$DOCKERHUB_USERNAME/bse_${REG_NO}_commands:latest" .
+        run: docker build -t "$DOCKERHUB_USERNAME/bse_${REG_NO}_commands:latest" ./bse7_12
 
       - name: Push image
         env:
