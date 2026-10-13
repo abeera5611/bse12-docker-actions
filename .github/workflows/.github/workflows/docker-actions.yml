@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 env:
-  REG_NO: "12"
+  REG_NO: "XX"   # replace XX with your two-digit registration number, e.g. "07"
 
 jobs:
   build-and-push:
