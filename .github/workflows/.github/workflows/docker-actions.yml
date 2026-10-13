@@ -30,7 +30,7 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./bse7_12
+          file: ./bse7_12/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/bse_${{ env.REG_NO }}_actions:latest
